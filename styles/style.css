@@ -1,0 +1,141 @@
+:root{
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-rosa: #EA1C81;
+    --cor-fundo: #FAFBFF;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: all 1s;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: var(--cor-topo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header nav a{
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+
+#header nav a:hover{
+    color: var(--cor-branca);
+    background-color: var(--cor-rosa);
+    border-radius: 15px;
+}
+
+.marginLateral{
+    margin: 0px 20px;
+}
+
+main #banner{
+    height: calc(100vh - 106px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.marginCimaBaixo{
+    margin: 20px 0px;
+}
+
+main #banner h1{
+    color: var(--cor-rosa);
+    font-size: 2em;
+}
+
+main #banner button{
+    color: var(--cor-branca);
+    background-color: var(--cor-rosa);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#header, 
+main #banner button, 
+#header nav a:hover,
+#bemVindo div,
+main #beneficios #beneficios-nossosbeneficios,
+main #beneficios #beneficios-servicos,
+#rodape,
+main #form #form-formulario form{
+    padding: 15px;
+}
+
+#bemVindo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#bemVindo #boasVindas h3{
+    color: var(--cor-rosa);
+    margin-bottom: 10px;
+}
+
+main #beneficios{
+    background-color: var(--cor-fundo);
+    color: var(--cor-rosa);
+}
+
+main #beneficios #beneficios-nossosbeneficios,
+main #form #form-texto,
+main #beneficios #beneficios-servicos,
+#rodape{
+    text-align: center;
+}
+
+main #beneficios #beneficios-servicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main #form #form-formulario form{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #form #form-formulario form input{
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+main #form #form-formulario form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-rosa);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 380px;
+    cursor: pointer;
+}
+
+main #form #form-formulario{
+    background-image: url(../img/form.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#rodape{
+    background-color: var(--cor-topo);
+}
